@@ -1,5 +1,8 @@
 nav {
-  background-color: var(--dark-grey);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #267FC3;
   height: 70px;
   display: flex;
   align-items: center;
