@@ -1,20 +1,13 @@
 // FONTS
 
-// Title letters
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-// font-family: 'Noto Sans KR', sans-serif;
-
-// Poppins buttons / slightly bold
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-// font-family: 'Poppins', sans-serif;
-
-// Default font
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+// Font body
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #23263A;
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 :root {
