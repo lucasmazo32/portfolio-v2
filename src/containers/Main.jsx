@@ -9,7 +9,7 @@ export default function Main() {
     <div className="Main">
       <Nav />
       <Presentation />
-      {/* <Stack /> */}
+      <Stack />
     </div>
   );
 }

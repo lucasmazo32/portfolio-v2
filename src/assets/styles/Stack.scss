@@ -1,51 +1,58 @@
 .Stack {
-  background-color: #267FC3;
   margin-top: 50px;
   h2 {
-    color: white;
-    padding: 1rem 0;
+    color: #FF4A57;
+    padding: 1rem 0 0 0;
     margin: 0;
     font-weight: bold;
-    text-align: center;
+    font-size: 3rem;
   }
-  .button-container {
+  .underline {
+    display: block;
+    height: 0.3rem;
+    width: 90px;
+    background-color: #FF4A57;
+  }
+  .skills-container {
+    margin-top: 50px;
     display: flex;
-    margin: 0 auto;
-    max-width: 900px;
+    justify-content: space-between;
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
-  .btn-rr {
-    background-image: url(../images/react-redux.png);
-  }
-  .btn-ruby {
-    background-image: url(../images/rails.png);
-  }
-  .btn-js {
-    background-image: url(../images/js.png);
-  }
-  .btn {
-    position: relative;
-    border-radius: 0;
-    flex-basis: 33.333%;
-    padding-bottom: 33.3333%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 0.5s ease;
-    &:hover {
-      span {
-        opacity: 0;
+  .single-skill {
+    background-color: #2B2D41;
+    padding: 20px;
+    width: 30%;
+    @media only screen and (max-width: 768px) {
+      width: 40%;
+      &:last-of-type {
+        margin: 50px auto 0 auto;
       }
     }
-    span {
-      position: absolute;
+    @media only screen and (max-width: 576px) {
+      width: 80%;
+      margin: 50px auto 0 auto;
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+    i {
+      display: block;
+      padding: 10px 0;
+      height: 70px;
+    }
+    svg {
+      color: #FF4A57;
+      width: 40px;
+    }
+    h3 {
+      font-size: 1.2rem;
       font-weight: bold;
-      top: 0;
-      left: -0.3%;
-      width: 100.6%;
-      padding: calc(50% - 0.5rem) 0;
-      background-color: #28282ad5;
-      color: white;
-      transition: all 0.5s ease;
+    }
+    ul {
+      font-size: 1rem;
     }
   }
 }

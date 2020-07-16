@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
-import { ReactComponent as Email } from '../assets/images/email.svg';
-import { ReactComponent as Phone } from '../assets/images/phone.svg';
+import { ReactComponent as Email } from '../assets/images/social/email.svg';
+import { ReactComponent as Phone } from '../assets/images/social/phone.svg';
 import { ReactComponent as Github } from '../assets/images/social/github.svg';
 import { ReactComponent as Twitter } from '../assets/images/social/twitter.svg';
 import { ReactComponent as Linkedin } from '../assets/images/social/linkedin.svg';
