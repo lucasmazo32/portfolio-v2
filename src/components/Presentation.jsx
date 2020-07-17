@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Button } from '@material-ui/core';
 import { ReactComponent as Email } from '../assets/images/social/email.svg';
 import { ReactComponent as Phone } from '../assets/images/social/phone.svg';
@@ -7,9 +8,9 @@ import { ReactComponent as Twitter } from '../assets/images/social/twitter.svg';
 import { ReactComponent as Linkedin } from '../assets/images/social/linkedin.svg';
 import '../assets/styles/Presentation.scss';
 
-export default function Presentation() {
+export default function Presentation({ myRef }) {
   return (
-    <section className="Presentation container-xl">
+    <section ref={myRef} className="Presentation container-xl">
       <div className="info-container">
         <h1>
           Hello, I am
@@ -46,3 +47,7 @@ export default function Presentation() {
     </section>
   );
 }
+
+Presentation.propTypes = {
+  myRef: PropTypes.objectOf(PropTypes.any).isRequired,
+};
