@@ -1,0 +1,22 @@
+.Recruiter {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2B2D41;
+  height: 300px;
+  top: calc(50vh - 150px);
+  h1 {
+    text-align: center;
+  }
+  .MuiButton-contained {
+    background-color: #FF4A57;
+    color: #F5F5F6;
+    font-weight: bold;
+    &:hover {
+      background-color: #ff424f;
+    }
+  }
+}

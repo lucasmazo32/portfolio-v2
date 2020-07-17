@@ -1,0 +1,18 @@
+.Survey {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2B2D41;
+  h1 {
+    text-align: center;
+  }
+  .options {
+    display: flex;
+    button {
+      margin: 10px;
+    }
+  }
+}

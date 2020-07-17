@@ -1,0 +1,10 @@
+.Answer {
+  .MuiButton-contained {
+    background-color: #FF4A57;
+    color: #F5F5F6;
+    font-weight: bold;
+    &:hover {
+      background-color: #ff424f;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useHistory } from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import { ReactComponent as Email } from '../assets/images/social/email.svg';
 import { ReactComponent as Phone } from '../assets/images/social/phone.svg';
@@ -9,6 +10,7 @@ import { ReactComponent as Linkedin } from '../assets/images/social/linkedin.svg
 import '../assets/styles/Presentation.scss';
 
 export default function Presentation({ myRef }) {
+  const history = useHistory();
   return (
     <section ref={myRef} className="Presentation container-xl">
       <div className="info-container">
@@ -23,7 +25,7 @@ export default function Presentation({ myRef }) {
           generating a great user experience.
         </p>
         <span>Are you a recruiter?&nbsp;&nbsp;&nbsp;</span>
-        <Button variant="contained">Click here</Button>
+        <Button variant="contained" onClick={() => history.push('/recruiter')}>Click here</Button>
       </div>
       <div className="contact-container">
         <h2>Contact me</h2>
