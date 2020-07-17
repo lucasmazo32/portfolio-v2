@@ -3,7 +3,6 @@ import '../assets/styles/Stack.scss';
 import { ReactComponent as Front } from '../assets/images/skills/front.svg';
 import { ReactComponent as Back } from '../assets/images/skills/back.svg';
 import { ReactComponent as Skills } from '../assets/images/skills/skills.svg';
-// import SingleProjectContainer from './SingleProjectContainer';
 
 export default function Stack() {
   return (
