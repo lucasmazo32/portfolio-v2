@@ -5,10 +5,8 @@
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #2B2D41;
-  height: 300px;
-  top: calc(50vh - 150px);
   h1 {
+    padding: 2rem 0;
     text-align: center;
   }
   .MuiButton-contained {

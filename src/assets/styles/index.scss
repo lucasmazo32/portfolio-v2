@@ -4,6 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
 
+// Survey font
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@700&display=swap');
+
+// font-family: 'Fira Sans Condensed', sans-serif;
+
+.sc-font {
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
 body {
   background-color: #23263A;
   color: white;
