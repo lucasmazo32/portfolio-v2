@@ -1,18 +1,29 @@
 .Survey {
   display: flex;
   position: relative;
+  max-width: 800px;
   margin: 0 auto;
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #2B2D41;
   h1 {
-    text-align: center;
+    width: 100%;
+    font-size: 2rem;
   }
-  .options {
+  .MuiLinearProgress-root {
+    flex-grow: 1;
+  }
+  .feedback {
     display: flex;
-    button {
-      margin: 10px;
+    align-items: center;
+    width: 100%;
+    span {
+      margin-right: 2rem;
     }
+  }
+  .MuiButton-contained.Mui-disabled {
+    align-self: flex-start;
+    color: lightgrey;
+    margin-top: 50px;
   }
 }

@@ -9,6 +9,9 @@
   .text {
     font-weight: bold;
     padding: 3rem 0 2rem 4rem;
+    @media only screen and (max-width: 768px) {
+      padding: 3rem 0 2rem 1rem;
+    }
   }
   .survey-duration {
     display: flex;
@@ -16,6 +19,9 @@
     padding-bottom: 1rem;
     div {
       margin-right: 4rem;
+      @media only screen and (max-width: 576px) {
+        margin-right: 5%;
+      }
       h3 {
         font-size: 1.6rem;
         font-weight: bold;

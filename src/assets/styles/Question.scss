@@ -1,0 +1,13 @@
+.Question {
+  width: 100%;
+  .options {
+    display: flex;
+    width: 100%;
+    .MuiButtonGroup-root {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+    }
+  }
+}

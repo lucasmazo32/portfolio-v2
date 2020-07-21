@@ -24,5 +24,9 @@ export default function RecruiterNav({ time }) {
 }
 
 RecruiterNav.propTypes = {
-  time: PropTypes.bool.isRequired,
+  time: PropTypes.bool,
+};
+
+RecruiterNav.defaultProps = {
+  time: false,
 };

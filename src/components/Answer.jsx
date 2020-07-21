@@ -7,9 +7,9 @@ export default function Answer({ ans, handleNext, handleStop }) {
   const renderButton = (() => {
     switch (ans.now) {
       case 'next':
-        return <Button onClick={() => handleNext()}>Next question</Button>;
+        return <Button variant="contained" color="secondary" onClick={() => handleNext()}>Next question</Button>;
       case 'stop':
-        return <Button onClick={() => handleStop()}>Go to main page</Button>;
+        return <Button variant="contained" color="secondary" onClick={() => handleStop()}>Go to main page</Button>;
       default:
         return null;
     }
@@ -17,8 +17,8 @@ export default function Answer({ ans, handleNext, handleStop }) {
 
   return (
     <section className="Answer">
-      <h4>{ans.text}</h4>
-      { renderButton() }
+      <h4>{ ans ? ans.text : null }</h4>
+      { ans ? renderButton() : null }
     </section>
   );
 }
