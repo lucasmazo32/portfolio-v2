@@ -1,12 +1,12 @@
 .Answer {
-  margin-top: 50px;
+  margin-top: 20px;
   width: 100%;
   h4 {
     font-size: 1.2rem;
   }
   .MuiButton-contained {
     background-color: #FF4A57;
-    color: #F5F5F6;
+    color: #23263a;
     &:hover {
       background-color: #ff424f;
     }
@@ -18,6 +18,23 @@
     flex-wrap: wrap;
     button {
       margin-top: 10px;
+    }
+  }
+
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-flex;
+    }
+    li::before {
+      content: "‣";
+      margin-right: 0.5rem;
+      color: #ff424f;
+      font-size: 2rem;
+      line-height: 1.5rem;
     }
   }
 

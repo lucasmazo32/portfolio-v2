@@ -21,8 +21,12 @@ export default function Answer({
 
   return (
     <section className="Answer">
-      <h4>{ ans ? ans.text : null }</h4>
-      <h4>{ ans.tech ? `Willing to learn: ${ans.tech.join(', ')}` : null}</h4>
+      <ul>
+        <li>
+          <h4>{ ans ? ans.text : null }</h4>
+        </li>
+        { ans.tech ? <li><h4>{`Willing to learn: ${ans.tech.join(', ')}`}</h4></li> : null }
+      </ul>
       { ans.conf ? (
         <div className="confirmation">
           <Button variant="contained" color="secondary" onClick={() => confA()}>I am willing to give you a chance!</Button>
@@ -42,6 +46,3 @@ Answer.propTypes = {
   confA: PropTypes.func.isRequired,
   confR: PropTypes.func.isRequired,
 };
-
-// Answer.defaultProps = {
-// };

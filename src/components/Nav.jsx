@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { ReactComponent as Email } from '../assets/images/social/email.svg';
 import { ReactComponent as Phone } from '../assets/images/social/phone.svg';
 import { ReactComponent as Github } from '../assets/images/social/github.svg';
@@ -7,9 +6,9 @@ import { ReactComponent as Twitter } from '../assets/images/social/twitter.svg';
 import { ReactComponent as Linkedin } from '../assets/images/social/linkedin.svg';
 import '../assets/styles/Nav.scss';
 
-export default function Nav({ myClass }) {
+export default function Nav() {
   return (
-    <nav className={`Nav${myClass}`}>
+    <nav className="Nav">
       <div className="contact">
         <a className="a-text" href="tel: +57 3135364824">
           <Phone />
@@ -27,7 +26,3 @@ export default function Nav({ myClass }) {
     </nav>
   );
 }
-
-Nav.propTypes = {
-  myClass: PropTypes.string.isRequired,
-};

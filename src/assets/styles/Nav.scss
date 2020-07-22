@@ -7,8 +7,6 @@
   z-index: 2;
   background-color: #212336;
   height: 70px;
-  transform: translateY(-70px);
-  transition: all 0.5s ease;
   h2 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -24,18 +22,18 @@
     display: flex;
     svg {
       color: #FF4A57;
-      width: 40px;
+      width: 35px;
       @media only screen and (max-width: 992px) {
         width: 30px;
       }
       @media only screen and (max-width: 576px) {
-        width: 35px;
+        width: 30px;
       }
     }
     .icons {
       margin-right: 20px;
       @media only screen and (max-width: 576px) {
-        margin-right: 10px;
+        margin-right: 15px;
       }
     }
     .github svg {
@@ -52,12 +50,8 @@
     a {
       margin-left: 20px;
       @media only screen and (max-width: 576px) {
-        margin-left: 10px;
+        margin-left: 15px;
       }
     }
   }
-}
-
-.Nav.open {
-  transform: translateY(0);
 }

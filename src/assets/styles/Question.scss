@@ -22,18 +22,18 @@
       color: lightgrey;
       @media only screen and (min-width: 992px) {
         background-color: #FF4A57;
-        color: #F5F5F6;
+        color: #23263a;
       }
     }
   }
 
   .MuiToggleButton-root.Mui-selected {
     background-color: #FF4A57;
-    color: #F5F5F6;
+    color: #23263a;
     transition: all 0.3s ease;
     &:hover {
       background-color: #FF4A57;
-      color: #F5F5F6;
+      color: #23263a;
       @media only screen and (min-width: 992px) {
         background-color: #2B2D41;
         color: lightgrey;
@@ -59,14 +59,28 @@
 
   .yoe {
     margin-top: 20px;
+    .MuiFormLabel-root {
+      color: #F5F5F6;
+    }
     .MuiInputBase-input {
       color: #F5F5F6;
     }
-    .MuiInputBase-root {
+    label.Mui-focused {
       color: #F5F5F6;
     }
-    .MuiFormLabel-root {
-      color: #F5F5F6;
+    .MuiInput-underline:after {
+      border-bottom-color: #F5F5F6;
+    }
+    .MuiOutlinedInput-root {
+      fieldset {
+        border-color: #F5F5F6;
+      }
+      &:hover fieldset {
+        border-color: #F5F5F6;
+      }
+      .Mui-focused fieldset {
+        border-color: #F5F5F6;
+      }
     }
   }
 }

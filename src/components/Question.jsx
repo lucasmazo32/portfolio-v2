@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { TextField, withStyles } from '@material-ui/core';
+import { TextField } from '@material-ui/core';
 import { ToggleButtonGroup, ToggleButton } from '@material-ui/lab';
 import '../assets/styles/Question.scss';
 
@@ -15,28 +15,6 @@ export default function Question({
   useEffect(() => {
     setMainTech(technologies);
   }, [technologies, setMainTech]);
-
-  const CssTextField = withStyles({
-    root: {
-      '& label.Mui-focused': {
-        color: '#F5F5F6',
-      },
-      '& .MuiInput-underline:after': {
-        borderBottomColor: '#F5F5F6',
-      },
-      '& .MuiOutlinedInput-root': {
-        '& fieldset': {
-          borderColor: '#F5F5F6',
-        },
-        '&:hover fieldset': {
-          borderColor: '#F5F5F6',
-        },
-        '&.Mui-focused fieldset': {
-          borderColor: '#F5F5F6',
-        },
-      },
-    },
-  })(TextField);
 
   const handleClickOption = (_e, newFormat) => {
     setOption(newFormat);
@@ -113,7 +91,7 @@ export default function Question({
       </div>
       { qnaInp ? (
         <div className="yoe">
-          <CssTextField onChange={handleInput} value={inputValue} id="outlined-basic" type="number" label="Years of experience" variant="outlined" />
+          <TextField onChange={handleInput} value={inputValue} id="outlined-basic" type="number" label="Years of experience" variant="outlined" />
         </div>
       ) : null }
     </section>

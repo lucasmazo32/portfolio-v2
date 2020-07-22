@@ -4,10 +4,11 @@ import { ReactComponent as Phone } from '../assets/images/social/phone.svg';
 import { ReactComponent as Github } from '../assets/images/social/github.svg';
 import { ReactComponent as Twitter } from '../assets/images/social/twitter.svg';
 import { ReactComponent as Linkedin } from '../assets/images/social/linkedin.svg';
+import '../assets/styles/Contact.scss';
 
 export default function Contact() {
   return (
-    <div className="contact-container">
+    <div className="Contact container-xl">
       <h2>Contact me</h2>
       <a className="a-text" href="tel: +57 3135364824">
         <Phone />
