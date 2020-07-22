@@ -3,11 +3,70 @@
   .options {
     display: flex;
     width: 100%;
-    .MuiButtonGroup-root {
+    .MuiToggleButtonGroup-root {
+      flex-flow: column;
       width: 100%;
     }
+  }
+
+  h4 {
+    margin: 15px 0 5px 0;
+  }
+
+  .MuiToggleButton-root {
+    background-color: #2B2D41;
+    color: lightgrey;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #2B2D41;
+      color: lightgrey;
+      @media only screen and (min-width: 992px) {
+        background-color: #FF4A57;
+        color: #F5F5F6;
+      }
+    }
+  }
+
+  .MuiToggleButton-root.Mui-selected {
+    background-color: #FF4A57;
+    color: #F5F5F6;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #FF4A57;
+      color: #F5F5F6;
+      @media only screen and (min-width: 992px) {
+        background-color: #2B2D41;
+        color: lightgrey;
+      }
+    }
+  }
+
+  .MuiToggleButtonGroup-root {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0;
     button {
-      width: 100%;
+      flex-grow: 1;
+      border-radius: 0;
+      margin-left: 0;
+    }
+  }
+
+  .multiple-text {
+    padding-bottom: 15px;
+    font-style: italic;
+  }
+
+  .yoe {
+    margin-top: 20px;
+    .MuiInputBase-input {
+      color: #F5F5F6;
+    }
+    .MuiInputBase-root {
+      color: #F5F5F6;
+    }
+    .MuiFormLabel-root {
+      color: #F5F5F6;
     }
   }
 }

@@ -18,13 +18,14 @@ export default function Answer({ ans, handleNext, handleStop }) {
   return (
     <section className="Answer">
       <h4>{ ans ? ans.text : null }</h4>
+      <h4>{ ans.tech ? `Willing to learn: ${ans.tech.join(', ')}` : null}</h4>
       { ans ? renderButton() : null }
     </section>
   );
 }
 
 Answer.propTypes = {
-  ans: PropTypes.objectOf(PropTypes.string).isRequired,
+  ans: PropTypes.objectOf(PropTypes.any).isRequired,
   handleNext: PropTypes.func.isRequired,
   handleStop: PropTypes.func.isRequired,
 };
