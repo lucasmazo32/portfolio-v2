@@ -42,6 +42,3 @@ Answer.propTypes = {
   confA: PropTypes.func.isRequired,
   confR: PropTypes.func.isRequired,
 };
-
-// Answer.defaultProps = {
-// };

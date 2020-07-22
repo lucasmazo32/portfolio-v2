@@ -1,4 +1,20 @@
 .Main {
   position: relative;
   margin-bottom: 50px;
+  .Contact {
+    display: flex;
+    margin: 50px auto 0 auto;
+    h2 {
+      text-align: center;
+      color: #FF4A57;
+      font-weight: bold;
+      font-size: 3rem;
+    }
+    .a-text {
+      text-align: center;
+    }
+    .social {
+      justify-content: center;
+    }
+  }
 }
