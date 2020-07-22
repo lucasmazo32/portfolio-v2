@@ -33,8 +33,8 @@ export default {
     inp: true,
     conf: true,
     ans: [
-      'I am a great fit for your company! Contact me.',
-      'I may be a good fit for your company. Contact me.',
+      'I am a great fit for your company!',
+      'I may be a good fit for your company.',
       'I am not the perfect fit for your company, but maybe in a few years I will!',
     ],
   },

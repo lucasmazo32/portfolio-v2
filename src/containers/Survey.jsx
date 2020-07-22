@@ -6,6 +6,7 @@ import qna from '../helpers/questions';
 import checkHelper from '../helpers/secondQ';
 import '../assets/styles/Survey.scss';
 import Question from '../components/Question';
+import monthsFromStart from '../helpers/yearsFromNov';
 import Answer from '../components/Answer';
 import RecruiterNav from '../components/RecruiterNav';
 
@@ -23,6 +24,27 @@ export default function Survey() {
       setAnswer(checkHelper(qna[question].check, framew, qna[question].ans));
     }
   }, [framew]);
+
+  useEffect(() => {
+    if (monthsFromStart().months / 12 > yoe) {
+      setAnswer({ text: qna[question].ans[0], contact: true, now: 'stop' });
+    } else if ((monthsFromStart().months / 12) + 2 > yoe) {
+      setAnswer({
+        text: `Are you sure you need ${yoe} years of experience? Maybe a highly motivated developer with ${monthsFromStart().text} of experience, and with the right coaching, can be a better fit!`,
+        conf: true,
+      });
+    } else {
+      setAnswer({ text: qna[question].ans[2], now: 'stop' });
+    }
+  }, [yoe]);
+
+  const confRejected = () => {
+    setAnswer({ text: qna[question].ans[2], now: 'stop' });
+  };
+
+  const confAccepted = () => {
+    setAnswer({ text: qna[question].ans[1], now: 'stop', contact: true });
+  };
 
   const history = useHistory();
 
@@ -54,7 +76,7 @@ export default function Survey() {
         <Question setYoe={setYoe} qnaInp={qna[question].inp} handleOption={handleOption} qnaOptions={qna[question].op} qnaMC={[qna[question].mcfront, qna[question].mcback, qna[question].mcql]} stack={stack} setMainTech={setFrameW} />
         {
           answer
-            ? <Answer ans={answer} handleNext={handleNext} handleStop={handleStop} />
+            ? <Answer ans={answer} confR={confRejected} confA={confAccepted} currExp={monthsFromStart().text} handleNext={handleNext} handleStop={handleStop} />
             : <Button variant="contained" color="secondary" disabled>Next</Button>
         }
       </section>
