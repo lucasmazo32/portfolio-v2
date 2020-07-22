@@ -1,0 +1,58 @@
+.Stack {
+  margin-top: 50px;
+  h2 {
+    color: #FF4A57;
+    padding: 1rem 0 0 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .underline {
+    display: block;
+    height: 0.3rem;
+    width: 90px;
+    background-color: #FF4A57;
+  }
+  .skills-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+  .single-skill {
+    background-color: #2B2D41;
+    padding: 20px;
+    width: 30%;
+    @media only screen and (max-width: 768px) {
+      width: 40%;
+      &:last-of-type {
+        margin: 50px auto 0 auto;
+      }
+    }
+    @media only screen and (max-width: 576px) {
+      width: 80%;
+      margin: 50px auto 0 auto;
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+    i {
+      display: block;
+      padding: 10px 0;
+      height: 70px;
+    }
+    svg {
+      color: #FF4A57;
+      width: 40px;
+    }
+    h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    ul {
+      font-size: 1rem;
+    }
+  }
+}

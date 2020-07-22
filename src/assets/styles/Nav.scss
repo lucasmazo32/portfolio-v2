@@ -1,0 +1,63 @@
+.Nav {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  z-index: 2;
+  background-color: #212336;
+  height: 70px;
+  transform: translateY(-70px);
+  transition: all 0.5s ease;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    @media only screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+  .contact, .social {
+    a {
+      display: flex;
+      justify-content: center;
+    }
+    display: flex;
+    svg {
+      color: #FF4A57;
+      width: 40px;
+      @media only screen and (max-width: 992px) {
+        width: 30px;
+      }
+      @media only screen and (max-width: 576px) {
+        width: 35px;
+      }
+    }
+    .icons {
+      margin-right: 20px;
+      @media only screen and (max-width: 576px) {
+        margin-right: 10px;
+      }
+    }
+    .github svg {
+      color: white;
+    }
+    .linkedin svg {
+      color: #0077B5;
+    }
+    .twitter svg {
+      color: #1DA1F2;
+    }
+  }
+  .contact {
+    a {
+      margin-left: 20px;
+      @media only screen and (max-width: 576px) {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.Nav.open {
+  transform: translateY(0);
+}
