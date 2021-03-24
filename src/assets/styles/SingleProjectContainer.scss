@@ -1,11 +1,26 @@
 .SingleProjectContainer {
+  @media only screen and (min-width: 576px) {
+    width: 60%;
+    &:nth-of-type(odd) {
+      margin-left: 5%;
+    }
+    &:nth-of-type(even) {
+      margin-left: 35%;
+    }
+  }
   margin-top: 50px;
   padding: 15px;
   background-color: #2B2D41;
   h3 {
     font-size: 1.5rem;
+    padding-left: 20px;
     font-weight: bold;
     color: #FF4A57;
+  }
+  .timespan {
+    font-style: italic;
+    color: #F1f1f1f1;
+    font-size: 0.9rem;
   }
   .info {
     display: flex;
@@ -13,18 +28,15 @@
       flex-flow: column;
       .image {
         margin: 20px 0;
-        padding-bottom: 50%;
+        max-width: 100%;
+        height: auto;
       }
     }
     .image {
-      flex-grow: 1;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
+      max-height: 40px;
     }
     .description {
       padding: 0 20px;
-      flex-basis: 60%;
       p {
         text-align: justify;
       }
@@ -33,13 +45,6 @@
   .info.portrait {
     @media only screen and (max-width: 576px) {
       flex-flow: column;
-      .image {
-        margin: 20px 0;
-        padding-bottom: 0;
-      }
-    }
-    .image {
-      min-height: 300px;
     }
     .description {
       margin: auto 0;
@@ -57,9 +62,6 @@
       font-weight: bold;
       align-items: center;
       color: #FF4A57;
-      &:last-of-type {
-        margin-left: 30px;
-      }
       svg {
         margin-left: 5px;
         width: 20px;

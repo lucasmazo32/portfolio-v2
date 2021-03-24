@@ -14,6 +14,7 @@ export default function Stack() {
           <i><Front /></i>
           <h3>Front end</h3>
           <ul>
+            <li>Dart / Flutter</li>
             <li>React / Redux</li>
             <li>JavaScript</li>
             <li>CSS / SASS</li>
@@ -36,6 +37,7 @@ export default function Stack() {
             <li>Github</li>
             <li>Git / Gitflow</li>
             <li>Webpack</li>
+            <li>Testing (Unit, Ui, State machine)</li>
           </ul>
         </div>
       </div>
